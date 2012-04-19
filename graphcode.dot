@@ -1,0 +1,33 @@
+digraph G {
+size = "8,10";
+"while(guess==magic)" [ style=filled, fillcolor=paleturquoise3];
+"switch(guess)" [ style=filled, fillcolor=paleturquoise3];
+"case1:" [ style=filled, fillcolor=paleturquoise3];
+"case2:" [ style=filled, fillcolor=paleturquoise3];
+"case3:" [ style=filled, fillcolor=paleturquoise3];
+"default:" [ style=filled, fillcolor=paleturquoise3];
+Start [style=filled, shape=box, fillcolor=antiquewhite]; 
+ End [style=filled, shape=box, fillcolor=antiquewhite];
+Start -> "while(guess==magic)";
+"while(guess==magic)" -> "(guess==magic)"[color =mediumseagreen];
+"while(guess==magic)" ->  End[color =mediumseagreen];
+"(guess==magic)" [style=filled, shape=doublecircle, fillcolor=palegreen3];
+"(guess==magic)" -> "switch(guess)"[color =mediumseagreen];
+"switch(guess)" -> "1:"[color =mediumseagreen];
+"switch(guess)" -> "2:"[color =mediumseagreen];
+"switch(guess)" -> "3:"[color =mediumseagreen];
+"switch(guess)" -> ":"[color =mediumseagreen];
+"case1:" -> "while(guess==magic)";
+"1:" [style=filled, shape=doublecircle, fillcolor=palegreen3];
+"1:" -> "case1:"[color =mediumseagreen];
+"case2:" -> "while(guess==magic)";
+"2:" [style=filled, shape=doublecircle, fillcolor=palegreen3];
+"2:" -> "case2:"[color =mediumseagreen];
+"case3:" -> "while(guess==magic)";
+"3:" [style=filled, shape=doublecircle, fillcolor=palegreen3];
+"3:" -> "case3:"[color =mediumseagreen];
+"default:" -> "while(guess==magic)";
+":" [style=filled, shape=doublecircle, fillcolor=palegreen3];
+":" -> "default:"[color =mediumseagreen];
+
+ }

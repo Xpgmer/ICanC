@@ -1,0 +1,46 @@
+/*
+ * NodeStat.cpp
+ *
+ *  Created on: 2011-03-14
+ *      Author: Matthew
+ */
+
+#include "NodeStat.h"
+#include <vector>
+#include "NodeData.h"
+#include <string>
+
+
+
+using namespace std;
+
+NodeStat::NodeStat(string Name, vector<NodeData> nodeVector){
+	name = Name;
+
+	//calculate count
+	int size = nodeVector.size();
+	int counter = 0;
+	for (unsigned int i = 0; i < nodeVector.size(); i++){
+		if (nodeVector.at(i).getDecisionType().compare(name)==0){
+			counter++;
+		}
+	}
+	count = counter;
+
+	//calculate frequency
+	frequency = (double)counter / (size+1);
+}
+
+string NodeStat::getName(){
+	return name;
+}
+
+double NodeStat::getFrequency(){
+	return frequency;
+}
+
+int NodeStat::getCount(){
+	return count;
+}
+
+

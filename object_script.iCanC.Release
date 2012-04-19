@@ -1,0 +1,15 @@
+INPUT(
+./release\CyclomaticComplexity.o
+./release\NodeStat.o
+./release\main.o
+./release\userinterface.o
+./release\SourceFormat.o
+./release\NodeData.o
+./release\LogicAnalyzer.o
+./release\PieChartWidget.o
+./release\PieChart.o
+./release\moc_userinterface.o
+./release\moc_PieChartWidget.o
+./release\moc_PieChart.o
+./release\qrc_Resouces.o
+);

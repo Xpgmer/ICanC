@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>new.png</file>
+        <file>open.png</file>
+        <file>paste.png</file>
+        <file>save.png</file>
+        <file>default.jpg</file>
+        <file>help_icon.jpg</file>
+        <file>icon_big.gif</file>
+        <file>icon.png</file>
+        <file>astyle</file>
+        <file>c_decisions.txt</file>
+    </qresource>
+</RCC>
